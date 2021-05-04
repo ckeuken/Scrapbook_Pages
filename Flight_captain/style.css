@@ -1,0 +1,102 @@
+*, *::before, *::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  box-sizing: border-box;
+  background: var(--rompertje-midden);
+  overflow-x: hidden;
+}
+
+#section_1 {
+  background: var(--rompertje-licht);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 10vw));
+  padding: 10vh 0;
+}
+
+#section_1 h1{
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 5rem;
+  color: var(--donker-blauw);
+}
+
+#section_1 #sun {
+  height: 500px;
+  width: 500px;
+  border-radius: 50%;
+  background: var(--accentkleur);
+  position: absolute;
+  margin-left: 30rem;
+  z-index: -1;
+}
+
+#section_1 #line {
+  height: 15px;
+  width: 100%;
+  border-radius: 10px;
+  background: var(--accentkleur);
+  position: relative;
+  transform: rotate(5.8deg);
+  margin-bottom: 0;
+  z-index: 1;
+  
+}
+
+#section_1 #vliegt_1 {
+  height: 200px;
+  width: 200px;
+  margin-bottom: 0.5rem;
+  margin-left: 40rem;
+}
+
+
+#section_2 {
+  background: var(--rompertje-midden);
+  padding: 25vh 0;
+}
+
+#section_2 .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#section_2 .container img{
+  height: auto;
+  width: 100%;
+  border: 3px dashed var(--donker-blauw);
+}
+
+#section_2 .container #vliegt_2 {
+  margin-top: -25rem;
+  margin-left: -3rem;
+  max-width: 300px;
+  max-height: 300px;
+}
+
+#section_2 .container #flight_cap {
+  max-width: 470px;
+}
+
+#section_2 .container #vliegt_3 {
+  margin-bottom: -35rem;
+  max-width: 300px;
+  max-height: 300px;
+}
+
+#section_3 {
+  background: var(--rompertje-donker);
+  padding: 10vh 0;
+  border-top: 10px solid var(--accentkleur);
+}
+
+#section_3 h2,
+#section_3 p {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+}
+
